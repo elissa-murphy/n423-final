@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: lemonberry;
+}
+
+button {
+  font-family: lemonberry;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+// Sweet Alerts
+.swal2-confirm.swal2-styled,
+.swal2-cancel.swal2-styled {
+  background-color: #fcea90 !important;
+  font-family: lemonberry;
+  color: #000 !important;
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}

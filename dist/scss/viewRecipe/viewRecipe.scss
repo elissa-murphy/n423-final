@@ -1,0 +1,189 @@
+.viewSingleRecipe-page {
+  margin: 0 auto;
+  min-height: 90vh;
+  padding: 60px 200px 0px 200px;
+
+  #singleRecipe {
+    .test1 {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+
+      #data {
+        display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        input {
+          outline: none;
+          background: none;
+          border: none;
+          display: inline;
+          font-family: lemonberry;
+        }
+
+        .viewSingleRecipe-row1 {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .viewSingleRecipe-row1Img {
+            height: 300px;
+            width: 400px;
+            .all-Recipes-Indiv-Img {
+              height: 300px;
+              width: 400px;
+              img {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+
+          input {
+            font-size: 48px;
+            margin-top: 235px;
+          }
+        }
+
+        .viewSingleRecipe-row2 {
+          min-height: 300px;
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          flex-direction: column;
+          margin-top: 48px;
+
+          input {
+            color: black;
+            font-size: 18px;
+            padding: 5px 0px 5px 10px;
+            border-radius: 10px;
+          }
+
+          input:disabled {
+            background-color: rgb(240, 240, 240);
+            color: rgb(110, 110, 110);
+          }
+
+          input:enabled {
+            background-color: $site-lightBlue;
+            color: black;
+          }
+
+          p {
+            font-size: 22px !important;
+            margin-bottom: 5px !important;
+          }
+
+          input.aRecipe-description {
+            margin-bottom: 30px;
+          }
+          input.aRecipe-time {
+            margin-bottom: 30px;
+          }
+          input.aRecipe-ingredients {
+            margin-bottom: 30px;
+          }
+          input.aRecipe-instructions {
+            margin-bottom: 30px;
+          }
+        }
+      }
+
+      .viewSingleRecipe-row3-buttons {
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          height: 40px;
+          width: 100px;
+          padding: 5px;
+          border-radius: 10px;
+          background-color: $site-yellow;
+          margin: 15px 5px 0px 5px;
+          border: none;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: $site-darkBlue;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .viewSingleRecipe-page {
+    overflow: hidden;
+
+    padding: 40px 20px 0px 20px !important;
+
+    #singleRecipe {
+      .test1 {
+        flex-direction: column;
+
+        #data {
+          flex-direction: column;
+
+          .viewSingleRecipe-row1 {
+            justify-content: center !important;
+            flex-direction: column !important;
+
+            .viewSingleRecipe-row1Img {
+              height: 300px;
+              width: 400px;
+              .all-Recipes-Indiv-Img {
+                height: 300px;
+                width: 400px;
+                img {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+
+            input {
+              font-size: 48px;
+              margin-top: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .viewSingleRecipe-page {
+    #singleRecipe {
+      .test1 {
+        #data {
+          .viewSingleRecipe-row1 {
+            .viewSingleRecipe-row1Img {
+              height: 300px !important;
+              width: 300px !important;
+              .all-Recipes-Indiv-Img {
+                height: 300px !important;
+                width: 300px !important;
+
+                img {
+                  padding: 25px 50px 25px 25px;
+                }
+              }
+            }
+
+            input {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

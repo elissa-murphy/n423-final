@@ -1,0 +1,90 @@
+.yourAccountPage {
+  margin: 0 auto;
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px;
+  height: 90vh;
+
+  &_greeting {
+    margin-bottom: 16px;
+    font-size: 36px;
+  }
+
+  &_title {
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+
+  &_password {
+    font-size: 24px;
+  }
+
+  &_email {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  &_btn {
+    margin-top: 60px;
+  }
+
+  &_btn a {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: $site-yellow;
+    border: none;
+    font-family: lemonberry;
+    font-size: 20px;
+    border: 3px solid $site-yellow;
+    text-decoration: none;
+    color: black;
+  }
+
+  &_btn a:hover {
+    background-color: $site-darkBlue;
+    border: 3px solid $site-darkBlue;
+    color: #fff;
+  }
+}
+
+.noAccount {
+  // background-color: $site-lightBlue;
+  margin: 0 auto;
+  height: 90vh;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 390px) {
+  .yourAccountPage {
+    &_greeting {
+      font-size: 36px;
+      width: 240px;
+    }
+
+    &_title {
+      font-size: 24px;
+      width: 250px;
+    }
+
+    &_password {
+      font-size: 20px;
+      width: 250px;
+    }
+
+    &_email {
+      font-size: 20px;
+      width: 250px;
+    }
+
+    &_btn a {
+      width: 219px;
+    }
+  }
+}

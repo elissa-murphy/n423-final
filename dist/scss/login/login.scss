@@ -1,0 +1,92 @@
+.loginPage {
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 64px 0px;
+
+  .createAccount-form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    input#createNewUser {
+      margin-top: 16px;
+      width: 125px;
+      padding: 5px;
+      border-radius: 15px;
+      background-color: $site-yellow;
+      border: none;
+      font-family: lemonberry;
+      border: 3px solid $site-yellow;
+      cursor: pointer;
+    }
+
+    input#createNewUser:hover {
+      background-color: $site-darkBlue;
+      border: 3px solid $site-darkBlue;
+      color: #fff;
+    }
+  }
+
+  .login-form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    button#siep,
+    button#soep {
+      margin-top: 16px;
+      width: 125px;
+      padding: 5px;
+      border-radius: 15px;
+      background-color: $site-yellow;
+      border: none;
+      font-family: lemonberry;
+      border: 3px solid $site-yellow;
+      cursor: pointer;
+    }
+
+    button#siep:hover,
+    button#soep:hover {
+      background-color: $site-darkBlue;
+      border: 3px solid $site-darkBlue;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    .createAccount-form {
+      input#addUser {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .loginPage {
+    min-height: 800px;
+    flex-direction: column;
+    .createAccount-form {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      input#addUser {
+        padding: 5px;
+      }
+    }
+
+    .login-form {
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+  }
+}
