@@ -20,6 +20,14 @@ To use this application, a user can...
 6. Favorite a recipe to be displayed on the Favorite Recipes page for easy access
 7. View their account information on the View Account page 
 
+When a user adds a recipe, the following information will need to be provided: 
+- Recipe name
+- Recipe Description
+- Recipe Prep Time
+- Recipe Ingredients
+- Recipe Instructions
+- Image of Recipe
+
 All users are authenticated through Firebase. Also, all recipes and their images are stored using Firebase Storage. 
 
 The homepage of the application also outlines the features of the application and guides the user on how to begin. Alerts are also present to the user throughout the site to help guide them. 
