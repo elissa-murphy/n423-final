@@ -28,8 +28,12 @@ When a user adds a recipe, the following information will need to be provided:
 - Recipe Instructions
 - Image of Recipe
 
-All users are authenticated through Firebase. Also, all recipes and their images are stored using Firebase Storage. 
+All users are authenticated through Firebase. 
+- If a user is not logged in, they cannot access the View Account Page
+- If a user has difficulty signing in, an alert will inform the user of what their error is (wrong email, etc.)
 
-The homepage of the application also outlines the features of the application and guides the user on how to begin. Alerts are also present to the user throughout the site to help guide them. 
+Also, all recipes and their images are stored using Firebase Storage. Therefore, when a user adds a recipe to the application, the recipe will still be there when they return. 
+
+The homepage of the application also outlines the features of the application and guides the user on how to begin. Alerts are presented to the user as they navigate throughout the site to help guide them. 
 
 All design prototyping was done using Adobe XD: https://xd.adobe.com/view/6b2987c1-5fbd-4d34-8d30-a914f884a402-3e7a/grid
